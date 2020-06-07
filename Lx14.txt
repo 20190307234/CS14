@@ -1,0 +1,116 @@
+C#企业级开发技术练习14答题卡
+
+班级：信管2班
+姓名:   邓圣涛
+学号：034
+
+注:请将答案放置在序号下方.**
+
+(一)
+使用系统；
+使用系统。线程；
+使用系统；线程；询问；
+使用System.Collection.Generic；
+名称空间ConsoleApp 1
+{
+班级计划
+    {
+静态空洞主(字符串[]args)
+        {
+堆栈<int>stk=新堆栈<int>()；
+INT[]arr={20，19，22，21，98，79，26}；
+前额(INT A In ARR)
+Stk.Push(A)；
+任务tk()
+            {
+返回Task.Run(()=>)
+                {
+同时(真)
+                    {
+锁(StK)
+                        {
+如果(stk.Count==0)中断；
+变量id=Thread.CurrentThread.ManagedThreadId；
+睡眠(1000)；
+var r=stk.Pop()；
+写行($“进程{id}删除元素{r}，剩余{stk.Count}个”)；
+                        }
+                    }
+                });
+            }
+任务[]tsk=新任务[5]；
+            {
+for(int n=0；n<5；n++)
+                {
+TSK[n]=tk()；
+                }
+[4]等()；
+Console.WriteLine(“End”)；
+            }
+        }
+    }
+}
+(二)
+使用系统；
+使用系统；线程；询问；
+名称空间ConsoleApp 1
+{
+班级计划
+    {
+静态空洞主(字符串[]args)
+        {
+十进制税(十进制，十进制)
+            {
+任务<十进制>PayTk=新任务<十进制>(s=>)
+                {
+var Pay=(十进制支付，十进制扣除)s；
+退货。付-付。扣减；
+}，支付)；
+PayTk.Start()；
+VAR Paytk=PayTk.ContinueWith(t=>t.Result-5000)
+(t=>t.Result*0.03m)；
+如果(paytk.Result<0)返回0；
+否则返回支付结果；
+            };
+[]Pays={(5000,1000)，(8000，0)，(10000,3000)}；
+外汇(按工资计)
+            {
+Console.WriteLine($“工资{Pay.Pay}附加扣除{Pay.Deduction}，所得税{Tax(Pay)}”)；
+            }
+        }
+    }
+}
+
+(三)
+使用系统；
+使用系统；线程；询问；
+使用System.IO；
+使用System.Collection.Generic；
+使用系统。线程；
+名称空间ConsoleApp 1
+{
+班级计划
+    {
+
+静态空洞主(字符串[]args)
+        {
+list<string>paFiles=新列表<string>()；
+对于(int i=0；i<10；i++)
+apFiles.Add(“paFile”+i.ToString())；
+随机兰德=新随机()；
+ForEach(paFiles，新Par等位选项(){MaxDegreeOfPar等位主义=3}，pafile=>)
+            {
+变量id=Thread.CurrentThread.ManagedThreadId；
+写行($“线程{id}开始写入{pafile}”)；
+(1,1000)；
+字节[]txt=新字节[len]；
+作者声明：[by]NextBytes(Txt)；
+使用(FileStream fs=新的FileStream(pafile，FileMode.Create))
+                {
+f.WITE(Txt)；
+                }
+写行($“线程{id}写入{pafile}，{len}字节”)；
+            });
+        }
+    }
+}
